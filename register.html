@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bright's Profile</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+      <nav class="navbarBox">
+        <ul>
+          <li class="navbar">
+            <a href="index.html">About Me</a>
+          </li>
+          <li class="navbar">
+            <a href="contact.html">Contact page</a>
+          </li>
+          <li class="navbar">
+            <a href="register.html">Registration page</a>
+          </li>
+          <li class="navbar">
+            <a href="login.html">Login page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <h3>
+      Registration Page
+    </h3>
+    <p>Have a feel about my offers and get registered</p>
+    <form action="/action.php" method="post" class="reg">
+      <label for="fname">First name:</label>
+      <input type="text" id="regForm" name="fname" required>
+      <label for="lname">Last name:</label>
+      <input type="text" id="regForm" name="lname" required>
+      <label for="phone">Phone number:</label>
+      <input type="number" id="regForm" name="phone" required>
+      <label for="gender">Gender:</label>
+      <select id="regForm" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="country">Country:</label>
+      <input type="text" id="regForm" name="country" required>
+      <label for="state">State/province:</label>
+      <input type="text" id="regForm" name="state" required>
+      <label for="email">Email:</label>
+      <input type="email" id="regForm" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="regForm" name="password" required>
+      <label for="cpassword">Confirm password:</label>
+      <input type="password" id="regForm" name="cpassword" required>
+      <input type="submit" value="Sign Up">
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

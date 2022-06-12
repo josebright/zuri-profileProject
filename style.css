@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  margin: 20px 50px;
+}
+
+.copyright{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img{
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 300px;  
+  border-radius: 50px 50px;
+}
+
+.copyright button{
+  padding: 10px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 0 30px 20px;
+}
+
+#contactButton{
+  background-color: #04AA6D;
+}
+
+#repoButton{
+  background-color: #3c584e;
+}
+
+.copyright button a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbarBox{
+  background-color: #f3f3f3;  
+}
+
+.navbarBox ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  width: 50%;
+}
+
+.navbar {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.navbar a {
+  display: block;
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  border: 1px solid #e7e7e7;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 900px) {
+  .navbarBox ul {
+    width: 100%;
+  }
+  .copyright{
+    display: block;
+    margin-left: 20px;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    text-align: center;
+    float: none;
+  }
+  
+  .navbar a {
+    margin: auto;
+    padding: 14px 0;
+  }
+}
+
+#regForm {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 20px 10px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #45a049;
+}
+
